@@ -20,6 +20,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
+Plugin 'vim-scripts/AutumnLeaf'
 
 call vundle#end()
 filetype plugin indent on
