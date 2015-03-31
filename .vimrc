@@ -97,3 +97,8 @@ set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
 
 " History settings
 set history=1000 " Longer edit history
+
+
+" Spell checking
+set spell " Enable spell checking
+set spelllang=en,hu,pt
