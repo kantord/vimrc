@@ -130,3 +130,8 @@ if has('persistent_undo')
     let &undodir = myUndoDir
     set undofile
 endif
+
+
+" Wildmenu settings
+set wildmode=longest,list,full
+set wildmenu
