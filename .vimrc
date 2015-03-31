@@ -111,3 +111,7 @@ map <C-S> :w<RETURN>
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
+
+
+" Hide the mouse cursor while typing
+set mousehide
