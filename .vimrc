@@ -1,6 +1,7 @@
 set nocompatible
 filetype off 
 
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -15,6 +16,7 @@ filetype plugin indent on
 " Custom settings for EasyMotion
 let g:EasyMotion_leader_key = '<leader>'
 
+
 " More convinient way to use system clipboard
 if has('clipboard')
     if has('unnamedplus') " When possible use + register for copy-paste
@@ -23,6 +25,7 @@ if has('clipboard')
         set clipboard=unnamed
     endif
 endif
+
 
 " Line numbering
 set nu
@@ -40,3 +43,12 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 syntax on
+
+
+" Settings for search
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+set ignorecase " Case insensitive search
+set smartcase " Case sensitive when uc present
+
+
