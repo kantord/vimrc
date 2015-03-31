@@ -15,6 +15,7 @@ Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'scrooloose/nerdcommenter'
 
 call vundle#end()
 filetype plugin indent on
