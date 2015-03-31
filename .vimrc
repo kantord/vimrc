@@ -10,6 +10,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -60,3 +61,5 @@ map <C-F> :Ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 
+" NERDTree settings
+map <C-K><C-B> :NERDTreeToggle<CR>
