@@ -106,3 +106,8 @@ set spelllang=en,hu,pt
 
 " save with Ctrl-S
 map <C-S> :w<RETURN>
+
+
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
