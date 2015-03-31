@@ -11,6 +11,8 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/seoul256.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'https://github.com/kien/ctrlp.vim.git'
+Plugin 'ivalkeen/vim-ctrlp-tjump'
 
 call vundle#end()
 filetype plugin indent on
@@ -63,3 +65,17 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " NERDTree settings
 map <C-K><C-B> :NERDTreeToggle<CR>
+
+
+" CtrlP settings
+map <C-R> :CtrlPBufTagAll<Return>
+let g:ctrlp_extensions = ['tag', 'buffertag']
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(env|git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll|pyc|swp)$',
+  \ }
+" Use ag to speed up CtrlP
+" Use .agignore (with .gitignore syntax) to ignore files
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+
