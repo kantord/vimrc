@@ -13,6 +13,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()
 filetype plugin indent on
