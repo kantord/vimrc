@@ -6,6 +6,7 @@ call vundle#begin()
 
 " Set up plugins here
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'junegunn/seoul256.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -22,3 +23,20 @@ if has('clipboard')
         set clipboard=unnamed
     endif
 endif
+
+" Line numbering
+set nu
+set relativenumber
+
+
+" Look & Feel
+colorscheme seoul256
+set guifont=Inconsolata-g\ for\ Powerline\ Medium\ 12
+set linespace=2
+set colorcolumn=80
+highlight ColorColumn guibg=Gray14
+set cursorline
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+syntax on
