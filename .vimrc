@@ -102,3 +102,7 @@ set history=1000 " Longer edit history
 " Spell checking
 set spell " Enable spell checking
 set spelllang=en,hu,pt
+
+
+" save with Ctrl-S
+map <C-S> :w<RETURN>
