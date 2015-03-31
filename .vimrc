@@ -143,5 +143,5 @@ set wildmenu
 
 
 " SnipMate settings
-:let g:snips_trigger_key = '<c-k>'
-:let g:snips_trigger_key_backwards = '<s-c-k>'
+imap <C-J> <Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
