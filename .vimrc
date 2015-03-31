@@ -115,3 +115,18 @@ nnoremap k gk
 
 " Hide the mouse cursor while typing
 set mousehide
+
+
+" persistent undo
+" http://stackoverflow.com/a/22676189
+" Put plugins and dictionaries in this dir (also on Windows)
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+    let myUndoDir = expand(vimDir . '/undodir')
+    " No console pops up
+    call system('mkdir ' . myUndoDir)
+    let &undodir = myUndoDir
+    set undofile
+endif
