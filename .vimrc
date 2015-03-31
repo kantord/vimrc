@@ -20,6 +20,10 @@ Plugin 'nvie/vim-flake8'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'scrooloose/syntastic'
 Plugin 'mattn/emmet-vim'
+Plugin 'MarcWeber/vim-addon-mw-utils' " Needed by snipmate
+Plugin 'tomtom/tlib_vim' " Needed by snipmate
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/AutumnLeaf'
 
 call vundle#end()
@@ -136,3 +140,8 @@ endif
 " Wildmenu settings
 set wildmode=longest,list,full
 set wildmenu
+
+
+" SnipMate settings
+:let g:snips_trigger_key = '<c-k>'
+:let g:snips_trigger_key_backwards = '<s-c-k>'
