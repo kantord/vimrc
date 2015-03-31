@@ -8,6 +8,7 @@ call vundle#begin()
 " Set up plugins here
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'junegunn/seoul256.vim'
+Plugin 'mileszs/ack.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -50,5 +51,11 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set ignorecase " Case insensitive search
 set smartcase " Case sensitive when uc present
+
+
+" Ack settings
+map <C-F> :Ack 
+" Use ag instead of ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 
