@@ -25,6 +25,7 @@ Plugin 'tomtom/tlib_vim' " Needed by snipmate
 Plugin 'garbas/vim-snipmate'
 Plugin 'honza/vim-snippets'
 Plugin 'vim-scripts/AutumnLeaf'
+Plugin 'gregsexton/Gravity'
 
 call vundle#end()
 filetype plugin indent on
