@@ -18,6 +18,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'nvie/vim-flake8'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()
 filetype plugin indent on
