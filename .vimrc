@@ -93,3 +93,7 @@ set expandtab " Tabs are spaces, not tabs
 set tabstop=4 " An indentation every four columns
 set softtabstop=4 " Let backspace delete indent
 set nojoinspaces " Prevents inserting two spaces after punctuation on a join (J)
+
+
+" History settings
+set history=1000 " Longer edit history
